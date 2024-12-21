@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(176.5px, 1fr));
+  gap: 8px;
+}
+
+.property-card {
+  min-width: 176.5px;
+  width: 100%;
+  height: 326px;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img {
+  width: 100%;
+  object-fit: cover;
+  min-width: 176.5px;
+  height: 246px;
+  border-radius: 12px;
+  transition: filter 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.image-container img:hover {
+  filter: brightness(0.8);
+}
+
+.like-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  border-radius: 50%;
+
+  cursor: pointer;
+  z-index: 20;
+}
+
+.rating {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+/* Rating color variants */
+.rating-low {
+  color: #ff4444; /* text color */
+}
+.rating-low .material-icons {
+  color: #ff4444 !important; /* red */
+}
+.rating-medium {
+  color: #ffc107; /* text color */
+}
+.rating-medium .material-icons {
+  color: #ffc107 !important; /* yellow */
+}
+.rating-high {
+  color: #4caf50; /* text color */
+}
+.rating-high .material-icons {
+  color: #4caf50 !important; /* green */
+}
+
+.property-info {
+  padding: 4px;
+}
+
+.property-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.property-info p {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.property-info .price {
+  font-weight: bold;
+  color: #333;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 480px;
+  margin: 0 auto;
+  z-index: 30;
+  width: 100%;
+}
+
+.nav-button {
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: #666;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.nav-button.active {
+  color: #ff4081;
+}
+
+.nav-button .material-icons {
+  font-size: 24px;
+}
+
+.property-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.views {
+  padding: 4px 8px;
+  border-radius: 4px;
+  line-height: 12px;
+  font-size: 12px;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.views .material-icons,
+.rating .material-icons {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.rating .material-icons {
+  color: #ffc107;
+}
+
+.property-info {
+  padding: 0px 8px;
+}
+
+.property-info h3 {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.property-info .date-range {
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 16px;
+}
+
+.most-liked-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 2px 10px;
+  border-radius: 16px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  line-height: 22px;
+  font-weight: 400;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  z-index: 20;
+}
