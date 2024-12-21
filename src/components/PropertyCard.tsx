@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useWishList } from "../context/WishListContext";
 // Import Swiper styles
-import "swiper/css";
+import "swiper/swiper.min.css";
 
 interface PropertyCardProps {
   property: Property;
