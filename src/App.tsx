@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <WishListContextProvider>
-        <BrowserRouter basename="/property">
+        <BrowserRouter>
           <Routes>
             <Route path="/property" element={<PropertyPage />} />
             <Route path="/property/:id" element={<PropertyDetailPage />} />
