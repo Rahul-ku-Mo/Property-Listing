@@ -1,8 +1,8 @@
 {
     "rewrites": [
         {
-            "source": "/property/(.*)",
-            "destination": "/"
+            "source": "/",
+            "destination": "/property"
         }
     ]
 }
