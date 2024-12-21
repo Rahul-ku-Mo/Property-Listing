@@ -1,7 +1,7 @@
-import apt1 from "../assets/images/apt-1.jpeg";
-import apt2 from "../assets/images/apt-2.jpeg";
-import apt3 from "../assets/images/apt-3.jpeg";
-import apt4 from "../assets/images/apt-4.jpeg";
+import apt1 from "../../public/assets/images/apt-1.jpeg";
+import apt2 from "../../public/assets/images/apt-2.jpeg";
+import apt3 from "../../public/assets/images/apt-3.jpeg";
+import apt4 from "../../public/assets/images/apt-4.jpeg";
 
 export const APARTMENTS = [
   {
